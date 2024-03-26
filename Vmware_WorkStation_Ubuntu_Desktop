@@ -1,0 +1,44 @@
+# Document Started on 03/26/2024
+# Version 0.1
+# Reference WebLinks
+# https://www.virten.net/vmware/workstation-release-and-build-number-history/
+# 
+
+
+# Download VMware Workstation & Save the Installer bundle in Home Directory
+ubuntu@ubuntu03252024:~$ ls
+Desktop    Music     snap       VMware-Workstation-Full-14.1.7-12989993.x86_64.bundle  VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle
+Documents  Pictures  Templates  VMware-Workstation-Full-15.5.7-17171714.x86_64.bundle
+Downloads  Public    Videos     VMware-Workstation-Full-16.2.5-20904516.x86_64.bundle
+
+
+# Grant Executable Permissions
+chmod +x VMware-Workstation-Full-14.1.7-12989993.x86_64.bundle
+chmod +x VMware-Workstation-Full-15.5.7-17171714.x86_64.bundle
+chmod +x VMware-Workstation-Full-16.2.5-20904516.x86_64.bundle
+chmod +x VMware-Workstation-Full-17.5.1-23298084.x86_64.bundle
+
+
+# Install Required Dependencies:
+sudo apt update
+sudo apt install build-essential gcc
+
+# GNU C Compiler (gcc) version 12.2.0, was not found vmware
+# Source WebLink
+# https://askubuntu.com/questions/1494239/gnu-c-compiler-gcc-version-12-2-0-was-not-found-vmware
+sudo apt install gcc-12 libgcc-12-dev
+
+# Run the Installation Script
+sudo ./VMware-Workstation-Full-12.x.x-<build_number>.x86_64.bundle
+
+
+# Follow Installation Prompts:
+
+# Follow the on-screen prompts to complete the installation process
+
+
+# Launch VMware Workstation:
+
+# After installation, launch VMware Workstation from the applications menu or by running
+vmware
+
